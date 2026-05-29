@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    .profile{
+      width:300px;
+      height:420px;
+      border:2px solid #333;
+      text-align:center;
+      margin:50px auto;
+      border-radius:15px;
+      background-color:#f8f8f8;
+      padding-top:20px;
+    }
+
+    h2{
+      margin-bottom:20px;
+    }
+
+    .circle{
+      height:100px;
+      width:100px;
+      background:url("https://cdn-icons-png.flaticon.com/512/3135/3135715.png");
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      margin-left:98px;
+      border:2px solid #333;
+      border-radius:50%;
+    }
+
+    .name{
+      margin-top:25px;
+      font-size:24px;
+      font-weight:bold;
+    }
+
+    .role{
+      margin-top:10px;
+      font-size:18px;
+      color:gray;
+    }
+
+    .desc{
+      margin-top:20px;
+      padding:0 20px;
+      line-height:22px;
+    }
+
+    button{
+      margin-top:25px;
+      padding:10px 25px;
+      font-size:16px;
+      border-radius:5px;
+      background-color: dodgerblue;
+      color: white;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile">
+    <h2>Profile Card</h2>
+    <div class="circle"></div>
+    <p class="name">Shreyansh Sahu</p>
+    <p class="role">MERN Developer</p>
+    <p class="desc">
+      Passionate web developer and instructor helping students learn
+      MERN Stack, JavaScript, React and DSA.
+    </p>
+    <button>Follow</button>
+  </div>
+</body>
+</html>

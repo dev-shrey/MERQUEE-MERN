@@ -1,0 +1,38 @@
+body{
+  background:#f2f2f2;
+}
+
+.traffic-light{
+  width:120px;
+
+  background:black;
+
+  padding:20px;
+
+  margin:50px;
+
+  border-radius:10px;
+}
+
+.red,
+.yellow,
+.green{
+  width:80px;
+  height:80px;
+
+  border-radius:50%;
+
+  margin:15px;
+}
+
+.red{
+  background:red;
+}
+
+.yellow{
+  background:yellow;
+}
+
+.green{
+  background:green;
+}
