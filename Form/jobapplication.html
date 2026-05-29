@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+</head>
+<body>
+  <!-- header -->
+  <h1>Job Application</h1>
+
+  <main>
+    <form>
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="John Doe" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="abc@example.com" required>
+        <br>
+        <br>
+        <label for="telephone">Phone Number:</label>
+        <input type="tel" id="telephone" placeholder="123-4567-890" required>
+        <br>
+        <br>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" required>
+      </fieldset>
+
+      <!-- Gender Information -->
+      <fieldset>
+        <legend>Gender Information</legend>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+      </fieldset>
+
+      <!-- Skills -->
+      <fieldset>
+        <legend>Skills</legend>
+        <label>Select Your Skills:</label><br>
+        <input type="checkbox" id="mern">
+        <label for="mern">MERN</label>
+        <br>
+        <input type="checkbox" id="ai">
+        <label for="ai">AI Developer</label>
+        <br>
+        <input type="checkbox" id="data">
+        <label for="data">Data Analyst</label>
+        <br>
+        <input type="checkbox" id="cn">
+        <label for="cn">Computer Engineer</label>
+        <br>
+      </fieldset>
+
+      <!-- Additional Information -->
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="experience">Year of Experience:</label>
+        <select id="experience">
+          <option disabled selected>--Select--</option>
+          <option>1 Year</option>
+          <option>2 Year</option>
+          <option>3+ Year</option>
+        </select>
+        <br>
+        <label for="location">Prefered Location:</label>
+        <select id="location">
+          <option disabled selected>--Select City--</option>
+          <option value="in">Indore</option>  
+          <option value="vd">Vadodara</option>
+          <option value="hyd">Hyderabad</option>
+          <option value="nd">Noida</option>
+        </select>
+        <br>
+        <label for="resume">Upload Resume:</label>
+        <input id="resume" type="file" maxlength="10MB" accept=".pdf,.htm">
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+</body>
+</html>
