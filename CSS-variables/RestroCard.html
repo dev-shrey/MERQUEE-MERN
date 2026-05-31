@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restro Card</title>
+  <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --body-bg: #f4f4f4;
+  --card-bg: #ffffff;
+  --heading-color: #555;
+  --soft-color: #8e44ad;
+  --pizza-color: #f39c12;
+  --burger-color: #27ae60;
+  --text-color: #333;
+  --white: #fff;
+  --container-width: 900px;
+  --radius: 12px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--body-bg);
+}
+
+.card-container{
+  width: var(--container-width);
+  margin: 50px auto;
+  padding: var(--space-md);
+}
+
+.card-container h2{
+  text-align: center;
+  color: var(--heading-color);
+  margin-bottom: var(--space-lg);
+}
+
+.card{
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.card h3{
+  color: var(--white);
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.para{
+  padding: var(--space-md);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.soft h3{
+  background: var(--soft-color);
+}
+
+.pizza h3{
+  background: var(--pizza-color);
+}
+
+.burger h3{
+  background: var(--burger-color);
+}
+
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <h2>Restro Card</h2>
+    <div class="card soft">
+      <h3>Soft Drink</h3>
+      <div class="para">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iure est exercitationem sit at. Placeat illum officiis molestias quas enim dicta nam eaque temporibus veniam, optio minima harum rem provident!</p>
+      </div>
+    </div>
+    <div class="card pizza">
+      <h3>Pizza</h3>
+      <div class="para">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iure est exercitationem sit at. Placeat illum officiis molestias quas enim dicta nam eaque temporibus veniam, optio minima harum rem provident!</p>
+      </div>
+    </div>
+    <div class="card burger">
+      <h3>Burger</h3>
+      <div class="para">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iure est exercitationem sit at. Placeat illum officiis molestias quas enim dicta nam eaque temporibus veniam, optio minima harum rem provident!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
