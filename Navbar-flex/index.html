@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#1e1e1e;
+    color:#f2f2f2;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-evenly;
+    list-style:none;
+    background-color:cadetblue;
+    padding:15px;
+}
+
+.navbar a{
+    color:rgb(0, 0, 0);
+    font-size:24px;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    color:black;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.chat p{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    font-size:40px;
+    cursor:pointer;
+}
+
+.second{
+    height:700px;
+    background-color:darkseagreen;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav">
+      <ul class="navbar">
+        <li><a href="">Home</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Welcome to the website</h1>
+    <span>These are the descriptions</span>
+  <div class="chat">
+    <p>💬</p>
+  </div>
+  </section>
+  <section class="second">
+      <h1>This is the Second Page</h1>
+  </section>
+</body>
+</html>
